@@ -36,7 +36,7 @@ public class Pickup : MonoBehaviour
         item = hit.collider.gameObject;
         item.transform.parent = transform;
         item.transform.rotation = new Quaternion(0f,0f,0f,0f);
-
+        
         item.GetComponent<Rigidbody>().constraints = 
         RigidbodyConstraints.FreezePositionY | 
         RigidbodyConstraints.FreezeRotationX | 
